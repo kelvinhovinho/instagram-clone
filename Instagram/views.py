@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 from django.contrib.auth import authenticate, login
+from django.contrib.auth.forms import UserCreationForm
 from django.shortcuts import render,redirect
 from django.contrib.auth.decorators import login_required
 from .forms import NewPostForm,CommentForm,profileForm,UserUpdateForm,profileForm,RegistrationForm
@@ -205,7 +206,7 @@ def follow_unfollow(request):
 def folo(request,id):
     current_user = request.user
     usertoFollow = User.objects.get(id = id)
-    follow = Followwww(user,usetoFollow)
+    follow = Followwww(UserCreationForm.usetoFollow)
     follow.save()
     return HttpResponseRedirect(request.path_info)
 
