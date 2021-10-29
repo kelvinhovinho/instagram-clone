@@ -28,7 +28,7 @@ A [link](https://www.figma.com/file/LojVD0lZuua3mac60kh1Ib/instaclone?node-id=1%
 
 #### Clone the Repo and rename it to suit your needs.
 ```bash
-git clone https://github.com/DorcasToto/IGClone
+git clone https://github.com/kelvinhovinho/instagram-clone
 ```
 #### Initialize git and add the remote repository
 ```bash
@@ -47,18 +47,7 @@ python3.6 -m virtualenv virtual
 source virtual/bin/activate
 ```
 
-#### Setting up environment variables
-Create a `.env` file and paste the following. Replace with your own values:
-```
-SECRET_KEY='10(tizju^09xfdu7z)ighv@6gj)4-n**9qrqjf%zmw!_npld)l'
-DEBUG=True
-DB_NAME='ig'
-DB_USER='<your database name>'
-DB_PASSWORD='<password to your database>'
-DB_HOST='127.0.0.1'
-MODE='dev'
-ALLOWED_HOSTS='*'
-DISABLE_COLLECTSTATIC=1
+
 ```
 
 #### Install dependencies
